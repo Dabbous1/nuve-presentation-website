@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuv&eacute; by Acumen &mdash; Intelligent Wealth Management</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/light/style.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- Side Navigation Arrows -->
+  <nav class="side-nav" id="sideNav">
+    <button class="nav-arrow nav-up" id="navUp" aria-label="Previous section">
+      <i class="ph-light ph-caret-up"></i>
+    </button>
+    <div class="nav-dots" id="navDots"></div>
+    <button class="nav-arrow nav-down" id="navDown" aria-label="Next section">
+      <i class="ph-light ph-caret-down"></i>
+    </button>
+  </nav>
+
+  <!-- ======== SECTION 0: HERO ======== -->
+  <section class="section section--hero" id="sec-hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Acumen Holding &middot; FRA Licensed Since 2010</p>
+      <h1 class="hero-title">Nuv<span class="accent-e">&eacute;</span></h1>
+      <p class="hero-tagline">Intelligent Wealth Management</p>
+      <p class="hero-sub">A digital-first wealth management experience for the informed, growth-oriented Egyptian investor.</p>
+      <div class="hero-cta">
+        <button class="btn btn--teal" onclick="scrollToSection(1)">Explore the Vision <i class="ph-light ph-arrow-down"></i></button>
+      </div>
+    </div>
+    <div class="hero-grid-lines"></div>
+  </section>
+
+  <!-- ======== SECTION 1: WHY THIS APP EXISTS ======== -->
+  <section class="section section--dark" id="sec-purpose">
+    <div class="section-inner">
+      <p class="section-label">Brand Strategy Foundation</p>
+      <h2 class="section-title">Why This App Exists</h2>
+      <div class="content-card content-card--glass">
+        <p>Egypt's wealth management landscape is at an inflection point. With over 170 fintech companies now active in the market, digital investment platforms like Thndr, Bokra, and Azinvest have successfully introduced millions of first-time retail investors to the Egyptian Stock Exchange.</p>
+        <p>Yet a critical gap remains: <strong>there is no digital-first wealth management experience</strong> designed for the informed, growth-oriented investor who has moved beyond basic stock trading and seeks structured, goal-based portfolio management backed by institutional expertise.</p>
+        <p>Acumen Holding &mdash; licensed by the Financial Regulatory Authority (FRA) since 2010 and operating through Acumen Asset Management, Acumen Securities Brokerage, and Acumen Advisory and Activism &mdash; is uniquely positioned to fill this gap. The wealth management app will bring Acumen's 15+ years of institutional investment acumen directly into the hands of Egypt's emerging affluent and mass-affluent segments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 2: MISSION & VISION ======== -->
+  <section class="section section--midnight" id="sec-mission">
+    <div class="section-inner section-inner--split">
+      <div class="split-left">
+        <p class="section-label">Brand Strategy Foundation</p>
+        <h2 class="section-title">Mission &amp; Vision</h2>
+      </div>
+      <div class="split-right">
+        <div class="mission-block">
+          <div class="mission-icon"><i class="ph-light ph-target"></i></div>
+          <h3 class="mission-label">Mission Statement</h3>
+          <p class="mission-text">To empower every Egyptian investor with institutional-grade wealth management &mdash; intelligently personalized, digitally seamless, and rooted in the expertise of Acumen Holding.</p>
+        </div>
+        <div class="mission-block mission-block--gold">
+          <div class="mission-icon"><i class="ph-light ph-eye"></i></div>
+          <h3 class="mission-label">Vision Statement</h3>
+          <p class="mission-text">To become the most trusted digital wealth platform in Egypt and the MENA region &mdash; the bridge between ambition and financial mastery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 3: FIVE PILLARS ======== -->
+  <section class="section section--dark" id="sec-pillars">
+    <div class="section-inner">
+      <p class="section-label">Brand Strategy Foundation</p>
+      <h2 class="section-title">The Five Pillars</h2>
+      <p class="section-subtitle">These values guide every product decision, design choice, and communication.</p>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="ph-light ph-brain"></i></div>
+          <h3>Acumen <span class="text-muted">(Intelligence)</span></h3>
+          <p>We apply sharp insight and data-driven strategy to every investment decision.</p>
+          <p class="pillar-app">AI-powered portfolio recommendations, research-backed insights, market analysis tools</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon pillar-icon--gold"><i class="ph-light ph-shield-check"></i></div>
+          <h3>Trust <span class="text-muted">(Am&#x101;na)</span></h3>
+          <p>We hold our clients' wealth and data with the highest standards of integrity and transparency.</p>
+          <p class="pillar-app">FRA licensing displayed prominently, real-time portfolio transparency, encrypted data, clear fee disclosures</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="ph-light ph-users"></i></div>
+          <h3>Empowerment</h3>
+          <p>We believe every investor deserves access to sophisticated tools previously reserved for institutions.</p>
+          <p class="pillar-app">Goal-based planning, scenario modeling, educational content, no prohibitive minimums</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon pillar-icon--gold"><i class="ph-light ph-sparkle"></i></div>
+          <h3>Simplicity</h3>
+          <p>We make complex financial concepts intuitive without dumbing them down.</p>
+          <p class="pillar-app">Clean UI, jargon-free explanations, progressive disclosure of complexity</p>
+        </div>
+        <div class="pillar-card pillar-card--wide">
+          <div class="pillar-icon"><i class="ph-light ph-trend-up"></i></div>
+          <h3>Forward Momentum</h3>
+          <p>We are future-oriented &mdash; building wealth is a journey, not a moment.</p>
+          <p class="pillar-app">Long-term performance tracking, milestone celebrations, savings streaks, portfolio growth visualizations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 4: TARGET AUDIENCE ======== -->
+  <section class="section section--midnight" id="sec-audience">
+    <div class="section-inner">
+      <p class="section-label">Brand Strategy Foundation</p>
+      <h2 class="section-title">Target Audience</h2>
+      <div class="audience-grid">
+        <div class="audience-card audience-card--primary">
+          <div class="audience-badge">Primary</div>
+          <h3>The Aspiring Wealth Builder</h3>
+          <div class="audience-details">
+            <div class="audience-stat"><span class="stat-label">Age</span><span class="stat-value">25&ndash;45</span></div>
+            <div class="audience-stat"><span class="stat-label">Income</span><span class="stat-value">EGP 25K&ndash;120K+/mo</span></div>
+            <div class="audience-stat"><span class="stat-label">Location</span><span class="stat-value">Cairo, Giza, Alex, Gulf</span></div>
+            <div class="audience-stat"><span class="stat-label">Behavior</span><span class="stat-value">Mobile-first, fintech-savvy</span></div>
+          </div>
+          <div class="audience-pain">
+            <h4>Pain Points</h4>
+            <ul>
+              <li>Scattered investments with no unified view</li>
+              <li>No clear goal-based strategy</li>
+              <li>Distrust of opaque fees</li>
+              <li>Desire for professional management without high minimums</li>
+            </ul>
+          </div>
+        </div>
+        <div class="audience-card">
+          <div class="audience-badge audience-badge--gold">Secondary</div>
+          <h3>The Established Investor</h3>
+          <p>High-net-worth individuals aged 35&ndash;60 with EGP 200,000+/month income, seeking a digital complement to their existing relationship with Acumen's advisory team. They value control, data density, and real-time oversight. Includes Egyptian professionals in the Gulf investing remotely.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-badge audience-badge--slate">Tertiary</div>
+          <h3>The Institutional Client</h3>
+          <p>SMEs and family offices seeking digital portfolio monitoring tools. This audience will be served in a later phase but the brand architecture accommodates them from day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 5: MARKET & DIFFERENTIATION ======== -->
+  <section class="section section--dark" id="sec-market">
+    <div class="section-inner">
+      <p class="section-label">Brand Strategy Foundation</p>
+      <h2 class="section-title">Market Landscape &amp; Differentiation</h2>
+      <p class="section-subtitle">The Egyptian digital investment market has grown rapidly, but current players leave room for a differentiated wealth management offering.</p>
+      <div class="market-table-wrap">
+        <table class="market-table">
+          <thead>
+            <tr>
+              <th>Competitor</th>
+              <th>Positioning</th>
+              <th>Gap We Fill</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Thndr</strong></td>
+              <td>Democratized stock trading for first-time investors. Retail-focused, commission-free.</td>
+              <td>Lacks structured wealth management, goal-based planning, and advisory depth.</td>
+            </tr>
+            <tr>
+              <td><strong>Bokra</strong></td>
+              <td>Goal-based investment through asset-backed securities. Savings-oriented.</td>
+              <td>We offer more sophisticated asset allocation with active management.</td>
+            </tr>
+            <tr>
+              <td><strong>Azinvest</strong></td>
+              <td>Digital fund access via Azimut Group. Institutional backend, limited UX.</td>
+              <td>Lacks a modern app experience and personalized wealth planning.</td>
+            </tr>
+            <tr>
+              <td><strong>EFG Hermes ONE</strong></td>
+              <td>Trading platform from established brokerage. Professional tools.</td>
+              <td>Not designed for passive, goal-based wealth building.</td>
+            </tr>
+            <tr>
+              <td><strong>Fawry Yawmy</strong></td>
+              <td>Micro-investment fund via payments giant Fawry.</td>
+              <td>Not positioned for affluent or growth-oriented investors.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 6: POSITIONING STATEMENT ======== -->
+  <section class="section section--positioning" id="sec-positioning">
+    <div class="section-inner">
+      <p class="section-label">Brand Strategy Foundation</p>
+      <h2 class="section-title">Positioning Statement</h2>
+      <blockquote class="positioning-quote">
+        <p>For <em>growth-oriented Egyptian investors</em> who want more than trading, <strong>Nuv&eacute; by Acumen Holding</strong> is the digital wealth management platform that combines institutional investment expertise with a modern, goal-based experience &mdash; unlike retail trading apps that stop at stock access, <span class="text-teal">we build and manage your wealth strategy.</span></p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 7: TRANSITION TO FEATURES ======== -->
+  <section class="section section--dark section--transition" id="sec-transition">
+    <div class="section-inner">
+      <h2 class="section-title section-title--large">The Nuv&eacute; Experience</h2>
+      <p class="section-subtitle">Four pillars power the app &mdash; each designed to transform how Egyptians manage wealth.</p>
+      <div class="feature-pillars-preview">
+        <div class="fp-item fp-item--active" data-target="sec-spend"><i class="ph-light ph-credit-card"></i><span>Spend</span></div>
+        <div class="fp-item" data-target="sec-save"><i class="ph-light ph-piggy-bank"></i><span>Save</span></div>
+        <div class="fp-item" data-target="sec-invest"><i class="ph-light ph-trend-up"></i><span>Invest</span></div>
+        <div class="fp-item" data-target="sec-insights"><i class="ph-light ph-chart-line-up"></i><span>Insights</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 8: SPEND PILLAR ======== -->
+  <section class="section section--feature" id="sec-spend">
+    <div class="feature-layout">
+      <div class="phone-column">
+        <div class="iphone-mockup">
+          <div class="iphone-notch"></div>
+          <div class="iphone-screen">
+            <iframe id="expoFrame" src="http://localhost:8081" title="Nuv&eacute; App Preview" allow="camera; microphone" class="loaded"></iframe>
+          </div>
+          <div class="iphone-home-bar"></div>
+        </div>
+        <div class="expo-qr-section">
+          <div class="qr-placeholder qr-target">
+            <i class="ph-light ph-qr-code"></i>
+            <p>Scan to preview on<br/>Expo Go</p>
+          </div>
+          <div class="expo-url-input">
+            <input type="text" id="expoUrlInput" placeholder="exp://your-expo-url" />
+            <button class="btn btn--teal btn--sm" onclick="loadExpoUrl()">Load</button>
+          </div>
+          <p class="expo-status"><i class="ph-light ph-check-circle"></i> Expo running on localhost:8081</p>
+        </div>
+      </div>
+      <div class="features-column">
+        <div class="pillar-header">
+          <div class="pillar-header-icon"><i class="ph-light ph-credit-card"></i></div>
+          <div>
+            <h2 class="pillar-name">Spend</h2>
+            <p class="pillar-desc">Egypt-native deposit &amp; card features</p>
+          </div>
+        </div>
+        <div class="features-list">
+
+          <div class="feature-item">
+            <div class="feature-id">PAY-1</div>
+            <h3>InstaPay Integration</h3>
+            <p>Fund your Nuv&eacute; wallet instantly via InstaPay from any linked bank account. Instant transfers with settlement under 30 seconds, fund-in and fund-out supported, transparent fee display.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> CBE Payment Service Provider License</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id">PAY-2</div>
+            <h3>Mobile Wallet Integration</h3>
+            <p>Fund via Vodafone Cash, Orange Cash, e&amp; Cash, or WE Pay &mdash; invest using the wallet you already have. Vodafone Cash priority at launch (55% market share), confirmation within 60 seconds.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> CBE E-Money License; Telecom Regulatory Authority Approval</span>
+            </div>
+          </div>
+
+<div class="feature-item">
+            <div class="feature-id">PAY-5</div>
+            <h3>Fawry Cash Deposit</h3>
+            <p>Deposit at any of Fawry's 372,000+ agent locations using a unique code &mdash; bridging cash to digital investing. Code valid for 24 hours, funds credited within 30 minutes.</p>
+            <div class="feature-meta">
+              <span class="feature-phase feature-phase--p2">Phase 2</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> CBE Payment Aggregator License; Fawry Partnership Agreement</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id">SPD-1</div>
+            <h3>Prepaid Card Issuance</h3>
+            <p>Receive a Nuv&eacute; branded prepaid card (physical or virtual) linked to your account. Spend directly from investment returns or cash balance. Supports Meeza + Visa/Mastercard networks.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> CBE Prepaid Card Issuance License; Meeza/Visa/Mastercard Network Membership</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id">SPD-2</div>
+            <h3>Card Funding &amp; Wallet Top-Up</h3>
+            <p>Top up your card balance from Nuv&eacute; investment account, linked bank, or mobile wallet. Set auto-top-up rules to maintain a minimum balance. Clear fee display per funding method.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> CBE E-Money License; PCI-DSS Level 1</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id">SPD-3</div>
+            <h3>Card Management Dashboard</h3>
+            <p>Full card control: freeze/unfreeze, set spending limits, view/reset PIN, enable/disable online transactions, ATM withdrawals, contactless payments. Real-time push notifications for every transaction.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> CBE Payment Card Regulations; PCI-DSS Level 1</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 9: SAVE PILLAR ======== -->
+  <section class="section section--feature section--feature-alt" id="sec-save">
+    <div class="feature-layout">
+      <div class="phone-column">
+        <div class="iphone-mockup">
+          <div class="iphone-notch"></div>
+          <div class="iphone-screen">
+            <iframe src="http://localhost:8081" title="Nuv&eacute; App Preview" class="expo-iframe-clone loaded"></iframe>
+          </div>
+          <div class="iphone-home-bar"></div>
+        </div>
+        <div class="expo-qr-section">
+          <div class="qr-placeholder qr-target">
+            <i class="ph-light ph-qr-code"></i>
+            <p>Scan to preview on<br/>Expo Go</p>
+          </div>
+        </div>
+      </div>
+      <div class="features-column">
+        <div class="pillar-header pillar-header--save">
+          <div class="pillar-header-icon"><i class="ph-light ph-piggy-bank"></i></div>
+          <div>
+            <h2 class="pillar-name">Save</h2>
+            <p class="pillar-desc">Goal-based wealth building</p>
+          </div>
+        </div>
+        <div class="features-list">
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--gold">IWE-1</div>
+            <h3>Goal-Based Portfolio Builder</h3>
+            <p>Define life goals &mdash; home, education, Hajj, retirement, emergency fund &mdash; with target amounts and timelines. The system generates a portfolio allocation optimized for each goal's time horizon and risk profile. Create 1&ndash;10 goals, see projected outcomes with confidence ranges (70th/50th/30th percentile), and adjust risk in real time.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> FRA Investment Advisory License</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--gold">IWE-3</div>
+            <h3>Smart Rebalancing Engine</h3>
+            <p>Your portfolio is automatically rebalanced when drift exceeds thresholds (&gt;5% from target). You receive a notification explaining what changed and why, with projected impact. Approve, defer, or modify the proposal. Full rebalancing history logged in the activity audit trail.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> FRA Portfolio Management License</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--gold">IWE-4</div>
+            <h3>Scenario Modeling</h3>
+            <p>Run "What if" scenarios: increase contributions, change timelines, simulate inflation or market conditions. See real-time visual before/after comparisons with results in both nominal and inflation-adjusted terms. Powered by Acumen's market models.</p>
+            <div class="feature-meta">
+              <span class="feature-phase feature-phase--p2">Phase 2</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> None required</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 10: INVEST PILLAR ======== -->
+  <section class="section section--feature" id="sec-invest">
+    <div class="feature-layout">
+      <div class="phone-column">
+        <div class="iphone-mockup">
+          <div class="iphone-notch"></div>
+          <div class="iphone-screen">
+            <iframe src="http://localhost:8081" title="Nuv&eacute; App Preview" class="expo-iframe-clone loaded"></iframe>
+          </div>
+          <div class="iphone-home-bar"></div>
+        </div>
+        <div class="expo-qr-section">
+          <div class="qr-placeholder qr-target">
+            <i class="ph-light ph-qr-code"></i>
+            <p>Scan to preview on<br/>Expo Go</p>
+          </div>
+        </div>
+      </div>
+      <div class="features-column">
+        <div class="pillar-header pillar-header--invest">
+          <div class="pillar-header-icon"><i class="ph-light ph-trend-up"></i></div>
+          <div>
+            <h2 class="pillar-name">Invest</h2>
+            <p class="pillar-desc">Multi-asset institutional access</p>
+          </div>
+        </div>
+        <div class="features-list">
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--blue">IWE-5</div>
+            <h3>Multi-Asset Universe</h3>
+            <p>Access EGX stocks, mutual funds, treasury bills, money market funds, gold, and fixed income &mdash; each with a plain-language risk explainer. Minimum 6 asset classes at launch with search, filter by risk level and performance, and per-asset benchmark comparison charts.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> FRA Securities License; FRA Fund Distribution License</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--blue">TRU-1</div>
+            <h3>Transparent Fee Engine</h3>
+            <p>See the exact fee in EGP and percentage before every transaction, with industry comparison. Annual fee summary shows total fees paid vs. total returns generated. Breakdown by type: management, transaction, fund expense ratio. Zero hidden charges.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> None required</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--blue">IWE-6</div>
+            <h3>Acumen Research Integration</h3>
+            <p>Exclusive market insights from Acumen's advisory team delivered in-app and tagged to your holdings. Minimum 4 reports per month, available in Arabic and English, with read time estimates and portfolio relevance scoring.</p>
+            <div class="feature-meta">
+              <span class="feature-phase feature-phase--p2">Phase 2</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> FRA Investment Advisory License</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECTION 11: INSIGHTS & INTELLIGENCE ======== -->
+  <section class="section section--feature section--feature-alt" id="sec-insights">
+    <div class="feature-layout">
+      <div class="phone-column">
+        <div class="iphone-mockup">
+          <div class="iphone-notch"></div>
+          <div class="iphone-screen">
+            <iframe src="http://localhost:8081" title="Nuv&eacute; App Preview" class="expo-iframe-clone loaded"></iframe>
+          </div>
+          <div class="iphone-home-bar"></div>
+        </div>
+        <div class="expo-qr-section">
+          <div class="qr-placeholder qr-target">
+            <i class="ph-light ph-qr-code"></i>
+            <p>Scan to preview on<br/>Expo Go</p>
+          </div>
+        </div>
+      </div>
+      <div class="features-column">
+        <div class="pillar-header pillar-header--insights">
+          <div class="pillar-header-icon"><i class="ph-light ph-chart-line-up"></i></div>
+          <div>
+            <h2 class="pillar-name">Insights &amp; Intelligence</h2>
+            <p class="pillar-desc">Data-driven portfolio intelligence</p>
+          </div>
+        </div>
+        <div class="features-list">
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--purple">INS-1</div>
+            <h3>Portfolio Health Score</h3>
+            <p>A single 0&ndash;100 score synthesizing your portfolio's diversification, goal alignment, risk-adjusted performance, and fee efficiency. Updated daily with 2&ndash;3 actionable recommendations. Factors: diversification (25%), goal alignment (25%), risk-adjusted returns (20%), fee efficiency (15%), rebalancing freshness (15%).</p>
+            <div class="feature-meta">
+              <span class="feature-phase feature-phase--p2">Phase 2</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> None required</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--purple">INS-2</div>
+            <h3>Inflation-Adjusted Returns</h3>
+            <p>Every performance display shows both nominal and real (inflation-adjusted) returns &mdash; critical in Egypt's high-inflation environment. Uses latest CPI data from CAPMAS / CBE. Toggle between nominal and real views with historical real returns charts.</p>
+            <div class="feature-meta">
+              <span class="feature-phase">MVP</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> None required</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--purple">INS-3</div>
+            <h3>Market Pulse Feed</h3>
+            <p>Curated bilingual market updates tagged to your portfolio's exposure. Covers EGX, USD/EGP, CBE rates, oil, and global macro. Each update tagged to portfolio impact with minimum 3 updates per trading day, sources attributed.</p>
+            <div class="feature-meta">
+              <span class="feature-phase feature-phase--p2">Phase 2</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> EGX Market Data Licensing Agreement</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--purple">INS-4</div>
+            <h3>Dividend &amp; Income Tracker</h3>
+            <p>Aggregated view of all dividends, coupons, and fund distributions received. Historical timeline, monthly/quarterly/annual aggregation, income growth chart, and projected future income based on current holdings. Exportable as PDF for tax records.</p>
+            <div class="feature-meta">
+              <span class="feature-phase feature-phase--p2">Phase 2</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> None required</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-id feature-id--purple">INS-5</div>
+            <h3>Currency Exposure Monitor</h3>
+            <p>See your portfolio's breakdown by currency exposure (EGP vs. USD-linked vs. gold) with plain-language explanations. Historical currency exposure trends and devaluation scenario modeling included.</p>
+            <div class="feature-meta">
+              <span class="feature-phase feature-phase--p3">Phase 3</span>
+              <span class="feature-license"><i class="ph-light ph-shield-check"></i> None required</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <section class="section section--footer" id="sec-footer">
+    <div class="section-inner">
+      <div class="footer-logo">Nuv<span class="accent-e">&eacute;</span></div>
+      <p class="footer-tagline">Wealth, Intelligently Managed</p>
+      <div class="footer-divider"></div>
+      <p class="footer-disclaimer">Nuv&eacute; is a product of Acumen Holding, licensed by the Egyptian Financial Regulatory Authority (FRA) since 2010.</p>
+      <p class="footer-copy">&copy; 2026 Acumen Holding. All rights reserved.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
