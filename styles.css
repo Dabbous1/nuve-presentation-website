@@ -166,6 +166,40 @@ em { font-style: italic; }
   transform: translateY(0);
 }
 
+/* --- Top Right CTA --- */
+.top-cta {
+  position: fixed;
+  top: 24px;
+  right: 80px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: rgba(10, 22, 40, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(46, 196, 182, 0.25);
+  color: var(--nuve-teal);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.top-cta:hover {
+  background: rgba(46, 196, 182, 0.1);
+  border-color: var(--nuve-teal);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(46, 196, 182, 0.2);
+}
+
+.top-cta i {
+  font-size: 1rem;
+}
+
 /* --- Side Navigation --- */
 .side-nav {
   position: fixed;
