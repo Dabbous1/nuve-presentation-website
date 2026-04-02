@@ -118,7 +118,8 @@ document.addEventListener('keydown', (e) => {
 
 // --- Generate Expo QR codes ---
 function generateExpoQR() {
-  const expoUrl = 'https://web-build-woad.vercel.app';
+  // Deep link that opens in Expo Go / dev client on mobile
+  const expoUrl = 'https://expo.dev/preview/update?message=Nuv%C3%A9+v1.0&updateRuntimeVersion=1.0.0&createdAt=2026-04-02&updateGroupId=0b2237c7-4a42-4c26-83a7-23d657235c72&qr=1';
   const targets = document.querySelectorAll('.qr-target');
   if (typeof qrcode === 'undefined') return;
 
