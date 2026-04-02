@@ -118,8 +118,8 @@ document.addEventListener('keydown', (e) => {
 
 // --- Generate Expo QR codes ---
 function generateExpoQR() {
-  // Deep link that opens in Expo Go / dev client on mobile
-  const expoUrl = 'https://expo.dev/preview/update?projectId=537513c8-f101-4f71-aa14-4f93e6898d9f&group=0b2237c7-4a42-4c26-83a7-23d657235c72&qr=1';
+  // Expo Go deep link via tunnel
+  const expoUrl = 'exp://eqsab18-dabbous1-8081.exp.direct';
   const targets = document.querySelectorAll('.qr-target');
   if (typeof qrcode === 'undefined') return;
 
