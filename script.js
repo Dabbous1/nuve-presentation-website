@@ -118,7 +118,7 @@ document.addEventListener('keydown', (e) => {
 
 // --- Generate Expo QR codes ---
 function generateExpoQR() {
-  const expoUrl = 'https://expo.dev/accounts/dabbous1/projects/nuve-wealth-management/updates/0b2237c7-4a42-4c26-83a7-23d657235c72';
+  const expoUrl = 'https://web-build-woad.vercel.app';
   const targets = document.querySelectorAll('.qr-target');
   if (typeof qrcode === 'undefined') return;
 
